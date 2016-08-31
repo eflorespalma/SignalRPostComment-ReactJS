@@ -1,0 +1,36 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    var imgPath = "@Url.Content("~/Content/img/")";
+    var imgProfile = imgPath + "a9.jpg";
+    var profilesIMG = ['a1.jpg', 'a2.jpg', 'a3.jpg', 'a4.jpg', 'a5.jpg', 'a6.jpg', 'a7.jpg', 'a8.jpg'];
+    var d = new Date();
+    $(document).ready(function () {
+        $.connection.hub.start();
+        $('#displayname').val(prompt('Por favor, ingresa tu nombre:', ''));
+        $('#message').focus();
+    });
+
+    function Pad(n) {
+        return (parseInt(n) < 10 ? '0' : '') + n;
+    }
+
+    function GetKey() {
+        function s4() {
+            return Math.floor((1 + Math.random()) * 0x10000)
+              .toString(16)
+              .substring(1);
+        }
+        return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
+          s4() + '-' + s4() + s4() + s4();
+    }
+</script>
+<div style="height:20px;"></div>
+<input type="hidden" id="displayname" />
+<input type="hidden" id="imgName" />
+<div style="padding-left:50px; padding-right:50px;">
+    <div class="social-feed-box" id="content">
+    </div>
+</div>
+<script src="~/Scripts/app/UserComment.jsx"></script>
