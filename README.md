@@ -2,8 +2,8 @@
 A demo using real time for post comments with SignalR and ReactJS.
 
 ## Components
--News
---ProfileComment
---CommentList
----Comment
----CommentForm
+-News <br />
+--ProfileComment <br />
+--CommentList <br />
+---Comment <br />
+---CommentForm <br />
