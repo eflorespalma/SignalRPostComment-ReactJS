@@ -76,7 +76,7 @@ var ProfileComment = React.createClass({
                     <a href='#' className='pull-left'><img alt='image' src={this.props.imgProfile} /></a>
                     <div className="media-body">
                     <a href="#">Edgar Flores</a>
-                    <small className="text-muted">Today 4:21 pm - 12.06.2014</small>
+                    <small className="text-muted">Hoy 4:21 pm - 29.08.2016</small>
                     </div>
                 </div>
                 <div className="social-body">
