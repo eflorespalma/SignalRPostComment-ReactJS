@@ -1,5 +1,5 @@
 # SignalRPostComment
-A demo using real time for post comments with SignalR and ReactJS.
+A demo using real time for post comments with SignalR and ReactJS :+1:.
 
 ## Components
 -News <br />
